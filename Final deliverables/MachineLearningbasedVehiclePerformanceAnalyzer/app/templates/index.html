@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning Based Vehicle Performance Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+
+    <style>
+        body{
+            background-color: hsl(0, 0%, 95%);
+        }
+        .container{
+            background-color: rgb(18, 162, 175);
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-group{
+            margin-top: 20px;
+        }
+        .form-control{
+            border-radius: 10px;
+        }
+        .btn{
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .fa{
+            font-size: 30px;
+            color: #f2f2f2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Machine Learning Based Vehicle Performance Analysis</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <!--suppress XmlInvalidId -->
+                <label for="cylinder">Number of Cylinders</label>
+                <input type="number" class="form-control" id="cylinder" name="cylinder" placeholder="Enter Year of Number of cylinders">
+            </div>
+            <div class="form-group">
+                <label for="displacement">Displacement</label>
+                <input type="number" class="form-control" id="displacement" name="displacement" placeholder="Enter Displacement">
+            </div>
+            <div class="form-group">
+                <label for="horsepower">Horse Power</label>
+                <input type="number" class="form-control" id="horsepower" name="horsepower" placeholder="Enter Horse Power">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="number" class="form-control" id="weight" name="weight" placeholder="Enter Weight of the vehicle">
+            </div>
+            <div class="form-group">
+                <label for="a">Acceleration</label>
+                <input type="number" class="form-control" id="a" name="a" placeholder="Enter Acceleration">
+            </div>
+            <div class="form-group">
+                <label for="my">Manufacture Year</label>
+                <input type="number" class="form-control" id="my" name="my" placeholder="Manufacture Year">
+            </div>
+            <div class="form-group">
+                <label for="ori">Origin</label>
+                <input type="number" class="form-control" id="ori" name="ori" placeholder="Enter Origin">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
